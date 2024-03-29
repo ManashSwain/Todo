@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Outfit", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    list-style: none;
+}
+
+
+.container {
+    width: 100%;
+    min-height: 100vh;
+    background-color: #E1AFD1;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.todoContainer {
+    min-width: 400px;
+    background-color: #FFE6E6;
+    padding: 20px;
+    border-radius: 5px;
+    margin-top: 100px;
+}
+
+.todoContainer h1 img {
+    width: 25px;
+}
+
+.todoContainer h1  span {
+    margin-left: 10px;
+}
+
+.todoContainer h1 {
+    font-size: 28px;
+    color: #7469B6;
+}
+
+.inputContainer {
+    padding: 8px 5px;
+    margin: 10px 0px;
+    border-radius: 8px;
+    background-color: rgb(240, 239, 239);
+}
+
+.inputContainer input {
+    font-size: 18px;
+    outline: none;
+    border: 0;
+    background: transparent;
+}
+
+.btn {
+    padding: 7px 15px;
+    font-size: 14px;
+    margin: 3px;
+    color: white;
+    background-color:#D20062 ;
+    cursor: pointer;
+    border: 0;
+    outline: 0;
+    border-radius: 3px;
+
+}
+
+.btn:hover {
+    background-color: #e20c70;
+}
+
+.taskContainer {
+    margin-top: 20px;
+}
+
+.taskContainer ul li {
+    margin: 15px 0px;
+    position: relative;
+    padding-left: 30px;
+    cursor: pointer;
+}
+
+.taskContainer ul li span {
+    position: absolute;
+    bottom: -2px;
+    right: 2px;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.taskContainer ul li::before {
+    content: ' ' ;
+    position: absolute;
+    height: 24px;
+    width: 24px;
+    background-image: url(./Img/radio.png);
+    background-size: cover;
+    background-position: center;
+    left: 0px;
+    cursor: pointer;
+}
+
+.checked {
+    text-decoration: line-through;
+}
+
+ul li.checked::before {
+    background-image: url(./Img/checkicon.png);
+    cursor: pointer;
+}
+
+
